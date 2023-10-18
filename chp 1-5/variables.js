@@ -65,14 +65,15 @@
 //var date = '24';
 //document.write (greet +' '+ name + ' '+ date);
 
-var 1st = 'illegal';
-var full-name = 'ilegal';
-var alert = 'illegl';
-var var = 'illegal';
-var My Name = 'illegal';
+//var 1st = 'illegal';
+//var full-name = 'ilegal';
+//var alert = 'illegl';
+//var var = 'illegal';
+//var My Name = 'illegal';
 
-var fullName = 'legal';
-var full_name = 'legal';
-var num1 = 'legal';
-var my0name = 'legal';
-var age = 'legal';
+//var fullName = 'legal';
+//var full_name = 'legal';
+//var num1 = 'legal';
+//var my0name = 'legal';
+//var age = 'legal';
+
