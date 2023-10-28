@@ -74,11 +74,51 @@ var circumference = 2 * 3.142 * 4;
 var area = 3.142 * (4 * 4);
 //document.write("Radius of a circle : " + radius + "<br>" + "The circumference is : " + circumference + "<br>" + "The area is : " + area);
 
-//var a = 6;
-//var stat1 = "the value of a is ";
-//var newa = ++a;
-//var stat2 = "now the value of a is ";
-//var newA = a++;
-//var olda = --a;
-//var oldA = a--;
-//document.write(stat1 + a + "<br>" + stat2 + newa + "<br>" + stat2 + newA + "<br>" + stat2 + olda + "<br>" + stat2 + oldA);
+var a = 6;
+var stat1 = "the value of a is ";
+//document.write(stat1 + a + "<br>");
+
+var newa = ++a;
+var stat2 = "now the value of ++a is ";
+//document.write(stat1 + newa + "<br>" + stat2 + newa + "<br>");
+
+var newA = a++;
+var stat3 = "now the value of a++ is ";
+//document.write(stat1 + a + "<br>" );
+//document.write(stat3 + a + "<br>");
+
+var olda = --a;
+var stat4 = "now the value of --a is ";
+//document.write(stat1 + newA + "<br>" + stat4 + olda + "<br>");
+
+var oldA = a--;
+var stat5 = "now the value of a-- is ";
+//document.write(stat1 + olda + "<br>" + stat5 + oldA + "<br>");
+
+var newadd = a;
+var stat6 = "now the value of last a is ";
+//ocument.write(stat6 + newadd);
+
+var b = 2;
+var c = 1;
+var result = --b - --c + ++c + c--;
+//document.write(result  + "<br>");
+
+var result1 = --b;
+//document.write(result1 + "<br>");
+
+var result2 = --b - --c;
+//document.write(result2 + "<br>");
+
+var result3 = --b - --c + ++c;
+//document.write(result3 + "<br>");
+
+var result4 = --b - --c + ++c + c--;
+//document.write(result4 + "<br>");
+
+var favSnack = "kurkure";
+var curAge = 21;
+var maxAge = 50;
+var amount = 5;
+var ageResult = (maxAge - curAge) * amount;
+document.write("You will need "+ ageResult +" to last you until the ripe old age of "+ maxAge);
