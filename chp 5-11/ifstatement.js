@@ -96,7 +96,7 @@ if ( Percentage < 60) {
     var remarks = "sorry";
     document.write("total marks ; " + totalMarks + "<br>" + "obtained Marks : " + obtainedMarks + "<br>" + 
     "percentage : " + Percentage + "<br>" + "grade : " + grade + "<br>" + "remarks : " + remarks);
-}*/
+}
 
 var name1 = prompt("name of item 1");
 var name2 = prompt("name of iten 2");
@@ -112,3 +112,56 @@ if (totalPrice >= totalPrice) {
     + "price of " + name2 + " is " + price2 + "<br>" + "quantity of " + name2 + " is " + quantity2 + "<br>" + "shipping charges is " + shipCharges + 
     "<br>" + "total cost of your order is " + totalPrice + "<br>" + "discounted price is " + discount);
 }
+
+var secret = 5;
+var guess = +prompt("guess a secret number");
+if (guess===secret) {
+    alert("bingo! correct answer");
+}
+if (guess!==secret) {
+    alert("Close enough to the correct answer");
+}
+
+var divi = +prompt("enter any number which is divisible by 3");
+if (divi % 3 === 0) {
+    document.write("this number is divisible by 3");
+}
+
+var team1 = prompt("enter team 1 name");
+var team2 = prompt("enter team 2 name");
+var score1 = prompt("enter team 1 score");
+var score2 = prompt("enter team 2 score");
+if (score1 > score2) {
+    alert(team1 + " won");
+}
+if (score2 > score1) {
+    alert(team2 + " won");
+}
+if (score1 === score2) {
+    alert("tie");
+}
+
+var num = +prompt("enter a number");
+if (num % 2 === 0) {
+    document.write("it is a even number");
+}
+if (num % 2 !== 0) {
+    document.write("it is a odd number");
+}
+
+var temp = +prompt("enter temperature");
+if (temp >= 40) {
+    document.write("It is too hot outside.");
+}
+if (temp >= 30 && temp < 40) {
+    document.write("The Weather today is Normal.");
+}
+if (temp >= 20 && temp < 30) {
+    document.write("Today’s Weather is cool.");
+}
+if (temp >= 10 && temp < 20) {
+    document.write("OMG! Today’s weather is so Cool.");
+}*/
+
+// question no 17 and 14 not done now 16 questions are done
+
