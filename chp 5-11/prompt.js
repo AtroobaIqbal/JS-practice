@@ -1,6 +1,12 @@
+//1. Write a program that takes input a name from user & greet the
+//user like this:
 //var name = prompt("enter your name");
 //alert("Hi" + " " + name);
 
+//2. Write a program to take input a number from user & display
+//it’s multiplication table on your browser. If user does not enter
+//a new number, multiplication table of 5 should be displayed by
+//default.
 //var table = prompt("enter a number to print its multiplication table");
 /*var multiply1 = table * 1;
 var multiply2 = table * 2;

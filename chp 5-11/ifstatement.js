@@ -1,16 +1,24 @@
+//3. Write a program to take “city” name as input from user. If user
+//enters “Karachi”, welcome the user like this: “Welcome to city
+//of lights”
 /*var city = prompt("enter your city");
 if (city==="karachi"){
     alert("welcome to the city of lights");
 }
 
+4. Write a program to take “gender” as input from user. If the
+user is male, give the message: Good Morning Sir. If the user is
+female, give the message: Good Morning Ma’am.
 var gender = prompt("what is your gender?");
-if (gender==="mele") {
+if (gender==="male") {
     alert("good morning sir");
 }
 if (gender==="female") {
     alert("good morning ma'am");
 }
 
+5. Write a program to take input color of road traffic signal from
+the user & show the message according to this table:
 var color = prompt("write traffic signal color");
 if (color==="red"){
     alert("vehicles must stop");
@@ -22,17 +30,25 @@ if (color==="green") {
     alert("vehicles can move now");
 }
 
+6. Write a program to take input max age & current age from
+user. If the current age is less than or equal to max age, show
+the message “You are welcome”
 var currentAge = prompt("write your current age");
 var maximumAge = prompt("write your maximum age");
 if (currentAge <= maximumAge) {
     alert("you are welcome");
 }
 
+7. Write a program to take input remaining fuel in car (in litres)
+from user. If the current fuel is less than 0.25litres, show the
+message “Please refill the fuel in your car”
 var fuel = prompt("remaining fuel in car (in litres)");
 if (fuel < 0.25) {
     alert("Please refill the fuel in your car");
 }
 
+8. Run this script, & check whether alert message would be
+displayed or not. Record the outputs.
 var a = 4;
 if (++a === 5){
  alert("given condition for variable a is true");
@@ -70,6 +86,10 @@ if("car" < "cat"){
     alert("car is smaller than cat");
 }
 
+9. Write a program to take input the marks obtained in three
+subjects & total marks. Compute & show the resulting
+percentage on your page. Take percentage & compute grade as
+per following table:
 var totalMarks = +prompt("enter total marks");
 var obtainedMarks = +prompt("enter obtained marks of 3 subjects");
 var Percentage = (obtainedMarks * 100) / totalMarks;
@@ -98,6 +118,18 @@ if ( Percentage < 60) {
     "percentage : " + Percentage + "<br>" + "grade : " + grade + "<br>" + "remarks : " + remarks);
 }
 
+10. Write a program to implement checkout process of a
+shopping cart system for an e-commerce website. Take input
+from users, the following:
+a. Name of item1
+b. Name of item2
+c. Price of item 1
+d. Price of item 2
+e. Ordered quantity of item 1
+f. Ordered Quantity of item 2
+g. Shipping charges
+Compute the total cost. If the total cost is above 2000 PKR ,
+offer them 10% discount & show the receipt in your browser.
 var name1 = prompt("name of item 1");
 var name2 = prompt("name of iten 2");
 var price1 = +prompt("price of item 1");
@@ -113,6 +145,13 @@ if (totalPrice >= totalPrice) {
     "<br>" + "total cost of your order is " + totalPrice + "<br>" + "discounted price is " + discount);
 }
 
+11. Guess game:
+Store a secret number (ranging from 1 to 10) in a variable.
+Prompt user to guess the secret number.
+a. If user guesses the same number, show “Bingo! Correct
+answer”.
+b. If the guessed number +1 is the secret number, show
+“Close enough to the correct answer”.
 var secret = 5;
 var guess = +prompt("guess a secret number");
 if (guess===secret) {
@@ -122,11 +161,17 @@ if (guess!==secret) {
     alert("Close enough to the correct answer");
 }
 
+12. Write a program to check whether the given number is
+divisible by 3. Show the message to the user if the number is
+divisible by 3.
 var divi = +prompt("enter any number which is divisible by 3");
 if (divi % 3 === 0) {
     document.write("this number is divisible by 3");
 }
 
+13. Names & Total scores of two teams are taken as input. Write
+a program that shows which team has won the game or show if
+there is a tie. (Team A or Team B)
 var team1 = prompt("enter team 1 name");
 var team2 = prompt("enter team 2 name");
 var score1 = prompt("enter team 1 score");
@@ -141,6 +186,8 @@ if (score1 === score2) {
     alert("tie");
 }
 
+15. Write a program that checks whether the given input is an
+even number or an odd number.
 var num = +prompt("enter a number");
 if (num % 2 === 0) {
     document.write("it is a even number");
@@ -149,6 +196,13 @@ if (num % 2 !== 0) {
     document.write("it is a odd number");
 }
 
+16. Weather in Karachi nowadays is too cool, write a program
+that takes temperature as input and shows a message based on
+following criteria
+a. T > 40 then “It is too hot outside.”
+b. T > 30 then “The Weather today is Normal.”
+c. T > 20 then “Today’s Weather is cool.”
+d. T > 10 then “OMG! Today’s weather is so Cool.”
 var temp = +prompt("enter temperature");
 if (temp >= 40) {
     document.write("It is too hot outside.");
