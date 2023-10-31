@@ -215,7 +215,55 @@ if (temp >= 20 && temp < 30) {
 }
 if (temp >= 10 && temp < 20) {
     document.write("OMG! Today’s weather is so Cool.");
-}*/
+}
 
-// question no 17 and 14 not done now 16 questions are done
+14. Take a string, a number and a Boolean in three variables.
+Write a program that checks the type of variables & responds
+accordingly.
+var str = "karachi";
+var num = 28;
+var bool = true;
+alert("str is a " + typeof(str));
+alert("num is a " + typeof(num));
+alert("bool is a " + typeof(bool));
 
+17. Write a program to create a calculator for +,-,*, / & % using if
+statements. Take the following input:
+a. First number
+b. Second number
+c. Operation (+, -, *, /, %)
+Compute & show the calculated result to user.
+var input1 = +prompt("enter value 1");
+var input2 = +prompt("enter value 2");
+var opr = prompt("enter operation + , - , * , /");
+if (opr === "+") {
+    var add = input1 + input2;
+    alert(input1 , " + " , input2 , " = " , add);
+}
+if (opr === "-") {
+    var sub = input1 - input2;
+    alert(input1 , " - " , input2 , " = " , sub);
+}
+if (opr === "*") {
+    var multi = input1 * input2;
+    alert(input1 , " * " , input2 , " = " , multi);
+}
+if (opr === "/") {
+    var divi = input1 / input2;
+    alert(input1 , " / " , input2 , " = " , divi);
+}
+
+18. Write a program that takes user input day name. If the day is
+Monday, Tuesday, Wednesday, Thursday or Friday, then show
+“It’s a week day”. If the day is Saturday then show “It’s
+weekend”. If the day is Sunday then show “Yay! It’s a holiday”.*/
+var dayName = prompt("enter your current day name");
+if (dayName === "monday" || "tuesday" || "wednesday" || "thursday" || "friday") {
+    document.write("It’s a week day");
+}
+if (dayName === "saturday") {
+    document.write(" its a weekend");
+}
+if (dayName === "sunday") {
+    document.write("Yay! It’s a holiday");
+}
