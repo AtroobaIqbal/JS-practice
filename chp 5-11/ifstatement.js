@@ -256,9 +256,21 @@ if (opr === "/") {
 18. Write a program that takes user input day name. If the day is
 Monday, Tuesday, Wednesday, Thursday or Friday, then show
 “It’s a week day”. If the day is Saturday then show “It’s
-weekend”. If the day is Sunday then show “Yay! It’s a holiday”.*/
+weekend”. If the day is Sunday then show “Yay! It’s a holiday”.
 var dayName = prompt("enter your current day name");
-if (dayName === "monday" || "tuesday" || "wednesday" || "thursday" || "friday") {
+if (dayName === "monday") {
+    document.write("It’s a week day");
+}
+if (dayName === "tuesday") {
+    document.write("It’s a week day");
+}
+if (dayName === "wednesday") {
+    document.write("It’s a week day");
+}
+if (dayName === "thursday") {
+    document.write("It’s a week day");
+}
+if (dayName === "friday") {
     document.write("It’s a week day");
 }
 if (dayName === "saturday") {
@@ -267,3 +279,39 @@ if (dayName === "saturday") {
 if (dayName === "sunday") {
     document.write("Yay! It’s a holiday");
 }
+
+19. Write a program that takes input user’s score, if it’s greater
+than 50, say “You are passed”. Otherwise, show “Try again!”
+var sel = +prompt("enter your score");
+if (sel > 50) {
+    alert("You are passed");
+}
+if (sel <= 50) {
+    alert("Try again!");
+}
+
+20. Write a program that:
+a. takes 2 numbers.
+b. tells whichever number is the greater (higher) number.
+c. tells if they are equal
+Show the output to make sure it works (e.g. "The greater
+number of 5 and 10 is 10.").
+var num1 = +prompt("write any number");
+var num2 = +prompt("write another number");
+if (num1 > num2) {
+    alert(num1 + " is greater than " + num2);
+}
+if (num1 < num2) {
+    alert(num2 + " is greater than " + num1);
+}
+if (num1 === num2) {
+    alert(num1 + " is equal to " + num2);
+}
+
+21. The Translator:
+Write a program that:
+a. takes 1 input, a language code (e.g. "es", "de", "en")
+b. tells "Hello, World" for the given language, for atleast 3
+languages. It should default to returning English.
+(Hint: use translate.google.com to check the translation of
+hello world in different languages)*/
