@@ -314,4 +314,26 @@ a. takes 1 input, a language code (e.g. "es", "de", "en")
 b. tells "Hello, World" for the given language, for atleast 3
 languages. It should default to returning English.
 (Hint: use translate.google.com to check the translation of
-hello world in different languages)*/
+hello world in different languages)
+
+
+
+
+
+22. Write a program to take input a number & tell whether it’s a
+positive or negative number.
+var newnum = +prompt("enter a number");
+if (newnum < 0 ) {
+    document.write("numbr is negative");
+}
+if (newnum > 0) {
+    document.write("number is positive")
+}
+
+23. The Pluralizer: Write a program that:
+a. takes 2 inputs, a noun and a number.
+b. tells the number and pluralized form, like "5 cats" or "1
+dog".
+var inte = +prompt("enter a number");
+var noun = prompt("enter a noun");
+document.write(inte + " " + noun + "s");*/
