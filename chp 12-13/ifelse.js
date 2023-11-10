@@ -50,4 +50,42 @@ by 3”.
 6. Write a program that takes a character(number or string) in a
 variable & checks whether the given input is a number,
 uppercase letter or lower case letter. (Hint: ASCII codes:-
-A=65, Z=90, a=97, z=122)*/
+A=65, Z=90, a=97, z=122)
+
+7. Write a program to create a calculator for +, -, *, /, % using
+switch case statements. (number1, number2 and operator will
+be input)
+
+8. Write a program that takes time as input from user in 24 hours
+clock format like: 1900 = 7pm. Implement the following case
+using if, else & else if statements.
+var time = prompt("enter time in 24 hrs format");
+if (time >= 0000 && time < 1200) {
+    document.write("good morning");
+} else if(time >= 1200 && time < 1700) {
+    document.write("good afternoon");
+} else if (time >= 1700 && time < 2100) {
+    document.write("good evening");
+} else if (time >= 2100 && time < 2359) {
+    document.write("good night");
+}
+
+9. Write a program that takes a calendar year in YYYY format in
+a variable. Check & notify the user whether it is a leap year or
+not.
+var saal = prompt("enter a year");
+var leapsaal = saal * 4;
+if ()
+
+
+
+10. Write a program that
+a. Store correct password in a JS variable.
+b. Asks user to enter his/her password
+c. Validate the two passwords:
+i. Check if user has entered password. If not, then give
+message “ Please enter your password”
+ii. Check if both passwords are same. If they are same,
+show message “Correct! The password you entered
+matches the original password”. Show “Incorrect
+password” otherwise.*/
