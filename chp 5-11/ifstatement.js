@@ -315,10 +315,15 @@ b. tells "Hello, World" for the given language, for atleast 3
 languages. It should default to returning English.
 (Hint: use translate.google.com to check the translation of
 hello world in different languages)
+let languageCode = prompt("Enter a language code (e.g., 'es', 'de', 'en'):") || 'en';
 
-
-
-
+if (languageCode === 'es') {
+    console.log("Hola, Mundo");
+} else if (languageCode === 'de') {
+    console.log("Hallo, Welt");
+} else {
+    console.log("Hello, World");
+}
 
 22. Write a program to take input a number & tell whether it’s a
 positive or negative number.
