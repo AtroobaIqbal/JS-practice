@@ -185,14 +185,100 @@ between 11 a.m. and 1 p.m., tell the user, "Time for lunch." If
 the hour is between 5 and 8 p.m., tell the user, "It's dinner
 time." For any other hours, tell the user, "Sorry, you'll have to
 wait, or go get a snack." (Hint: Store the hour in 24 hours clock
-format i.e. 14 for 2pm , 15 for 3pm)*/
+format i.e. 14 for 2pm , 15 for 3pm)
 var time = prompt("enter your time");
-if (time >= 6 || time <= 9) {
+if (time >= 6 && time <= 9) {
     document.write("Breakfast is served");
-} else if (time >= 11 || time <= 13) {
+} else if (time >= 11 && time <= 13) {
     document.write("Time for lunch.");
-} else if (time >= 17 || time <= 20) {
+} else if (time >= 17 && time <= 20) {
     document.write("It's dinner time.");
 } else {
     document.write("Sorry, you'll have to wait, or go get a snack.")
+}
+
+16. Write a program that stores value in a variable & tell whether
+the type of that variable is a "number", "string", "boolean" or
+“undefined”
+var str = "karachi";
+var num = 28;
+var bool = true;
+var fal ;
+alert("str is a " + typeof(str));
+alert("num is a " + typeof(num));
+alert("bool is a " + typeof(bool));
+alert("undefine is a " + typeof(fal));
+
+17. Write a program that takes a character (i.e. string of length 1)
+and returns true if it is a vowel, false otherwise.
+var characterVowel = prompt("enter any alphabet");
+if (characterVowel === "a" || characterVowel === "e" || characterVowel === "i" || characterVowel === "o" || characterVowel === "u") {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+
+  18. Choose the correct comparison operator to display "true",
+when:
+10 is NOT equal to 8.
+if (10 !== 8) {
+    console.log(true);
+} else {
+    console.log(false);
+}
+
+19. Use a switch statement to rewrite the following JavaScript
+code. Prompt the user for the number of a month rather than
+setting it to 8:
+var mahina = prompt("enter your current month number");
+switch(mahina) {
+    case "1" :
+    alert("January");
+    break;
+    case "2" :
+    alert("February");
+    break;
+    case "3" :
+    alert("March");
+    break;
+    case "4" :
+        alert("April");
+    break; 
+    case "5" :
+        alert("May");
+    break; 
+    case "6" :
+        alert("June");
+    break; 
+    case "7" :
+        alert("July");
+    break; 
+    case "8" :
+        alert("August");
+    break; 
+    case "9" :
+        alert("September");
+    break; 
+    case "10" :
+        alert("October");
+    break; 
+    case "11" :
+        alert("November");
+    break;
+    case "12" :
+        alert("December");
+    break;    
+    default :
+    alert("invalid month");
+}
+
+20. Use a conditional (ternary) operator for this exercise:
+If the variable age is a value below 18, the value of the variable 
+voteable should be "Too young",
+otherwise the value of voteable should be "Old enough".*/
+var age = +prompt("enter your age");
+if (age < 18) {
+    document.write("too young");
+} else {
+    document.write("old enough");
 }
