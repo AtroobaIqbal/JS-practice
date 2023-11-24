@@ -71,7 +71,7 @@ document.write(`<p>d. Car at last index: ${carAtLastIndex}</p>`);
 11. Write a program to store 3 student names in an array. Take
 another array to store score of these three students. Assume
 that total marks are 500 for each student, display the scores &
-percentages of students like:*/
+percentages of students like:
 var shagird = ["Michael" , "John" , "Tony"];
 var numBers = [320 , 230 , 480];
 document.write("<h2>Student Scores & Percentages:</h2>");
@@ -81,3 +81,50 @@ for (let i = 0; i < shagird.length; i++) {
     document.write(`<p>${shagird[i]}'s Percentage: ${percentage}%</p>`);
 }
 
+12. Initialize an array with color names. Display the array
+elements in your browser.
+a. Ask the user what color he/she wants to add to the
+beginning & add that color to the beginning of the array.
+Display the updated array in your browser.
+b. Ask the user what color he/she wants to add to the end &
+add that color to the end of the array. Display the updated
+array in your browser.
+c. Add two more color to the beginning of the array. Display
+the updated array in your browser.
+d. Delete the first color in the array. Display the updated
+array in your browser.
+e. Delete the last color in the array. Display the updated
+array in your browser.
+f. Ask the user at which index he/she wants to add a color &
+color name. Then add the color to desired position/index.
+. Display the updated array in your browser.
+g. Ask the user at which index he/she wants to delete
+color(s) & how many colors he/she wants to delete. Then
+remove the same number of color(s) from user-defined
+position/index. . Display the updated array in your
+browser.*/
+var colours = ["red","blue","green","yellow","purple","orange"];
+/*document.write(colours , "</br>");
+var ask = prompt("enter a colour name that you want to add");
+colours.unshift(ask);
+document.write(colours);
+var ask1 = prompt("enter a colour name that you want to add at the end");
+colours.push(ask1);
+document.write(colours);
+colours.unshift("white" , "black");
+document.write(colours , "</br>");
+colours.shift();
+document.write(colours , "</br>");
+colours.pop();
+document.write(colours);
+var ask2 = prompt("enter a colour name that you want to add");
+var posit = prompt("at which position you want to add the colour");
+colours.splice(posit , )
+f and g are not document
+
+
+
+
+
+13. Write a program to store student scores in an array & sort
+the array in ascending order using Array’s sort method. */
