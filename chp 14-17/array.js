@@ -105,26 +105,78 @@ position/index. . Display the updated array in your
 browser.*/
 var colours = ["red","blue","green","yellow","purple","orange"];
 /*document.write(colours , "</br>");
+part a
 var ask = prompt("enter a colour name that you want to add");
 colours.unshift(ask);
 document.write(colours);
+part b
 var ask1 = prompt("enter a colour name that you want to add at the end");
 colours.push(ask1);
 document.write(colours);
+part c
 colours.unshift("white" , "black");
 document.write(colours , "</br>");
+part d
 colours.shift();
 document.write(colours , "</br>");
+part e
 colours.pop();
 document.write(colours);
+part f
+method no 1
+
 var ask2 = prompt("enter a colour name that you want to add");
 var posit = prompt("at which position you want to add the colour");
-colours.splice(posit , )
-f and g are not document
+colours.splice(posit , 0 , ask2);
+document.write(colours);
 
+method no 2
 
-
-
+let colors = ['red', 'blue', 'green'];
+document.write("<p>Original Colors Array: " + colors.join(', ') + "</p>");
+let index = parseInt(prompt("Enter the index where you want to add a color (0 to " + colors.length + "):"));
+let userColor = prompt("Enter the color name:");
+if (index >= 0 && index <= colors.length) {
+    colors.splice(index, 0, userColor);
+    document.write("<p>Updated Colors Array: " + colors.join(', ') + "</p>");
+} else {
+    document.write("<p>Invalid index. Please enter a valid index within the range.</p>");
+}
+part g
+var index1 = prompt("entera index that you want to delete");
+var ask3 = prompt("how many colours that you want to delete");
+colours.splice(index1 , ask3);
+document.write(colours);
 
 13. Write a program to store student scores in an array & sort
-the array in ascending order using Array’s sort method. */
+the array in ascending order using Array’s sort method. 
+var studentScore = [320 , 230 , 480 , 120];
+document.write("Original Student Scores: " + studentScore , "</br>");
+studentScore.sort(function(a, b) {
+    return a - b;
+  });
+document.write("Sorted Student Scores (Ascending Order): " + studentScore);
+  
+14. Write a program to sort the below mentioned array:
+var fruits = ["strawberry", "apple", "orange", "banana"];
+document.write(fruits , "</br>");
+fruits.sort();
+document.write(fruits);
+
+15. Write a program to initialize an array with city names. Copy
+3 array elements from cities array to selectedCities array. 
+var cities = ["karachi" , "lahore" , "islamabad" , "peshawar" , "quetta"];
+document.write(cities , "</br>");
+var selectedCities = [];
+selectedCities = cities.slice(1 , 4);
+document.write(selectedCities);
+
+16. Write a program to create a single string from the below
+mentioned array:
+var arr = ["This" , "is" , "my" , "cat"];
+var join = arr.join(" ");
+document.write(join);
+
+17. Create a new array. Store values one by one in such a way
+that you can access the values in the order in which they were
+stored. (FIFO-First In First Out)*/
